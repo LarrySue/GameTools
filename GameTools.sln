@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameTools", "GameTools.csproj", "{4492DBC6-B89A-4622-95BE-AB2755188D7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4492DBC6-B89A-4622-95BE-AB2755188D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4492DBC6-B89A-4622-95BE-AB2755188D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4492DBC6-B89A-4622-95BE-AB2755188D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4492DBC6-B89A-4622-95BE-AB2755188D7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CECFD58F-8676-4B7F-B825-549C4B9A99AB}
+	EndGlobalSection
+EndGlobal
