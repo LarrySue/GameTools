@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="Game Tools" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="1"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer Grid.Column="0"
+                      HorizontalScrollBarVisibility="Hidden"
+                      VerticalScrollBarVisibility="Hidden">
+            <StackPanel x:Name="LeftStp">
+                <!--动态添加子项-->
+            </StackPanel>
+        </ScrollViewer>
+        <Border Grid.Column="1" Background="LightGray"/>
+        <Grid Grid.Column="2">
+            
+        </Grid>
     </Grid>
 </Window>
