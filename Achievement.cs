@@ -31,7 +31,7 @@ public class Achievement {
 /// 集合类成就，由子成就组成
 /// </summary>
 public class AchievementSet: Achievement {
-    public AchievementSet(Dictionary<String, object> dict) : base(dict) {
+    public AchievementSet(Dictionary<String, object> dict): base(dict) {
         Description = "完成下列成就";
         Type = AchievementType.Set;
         Status = 1;
@@ -71,7 +71,7 @@ public class AchievementSet: Achievement {
 /// 单一成就，由一个单独的目标构成
 /// </summary>
 public class AchievementSingle: Achievement {
-    public AchievementSingle(Dictionary<String, object> dict) : base(dict) {
+    public AchievementSingle(Dictionary<String, object> dict): base(dict) {
         Type = AchievementType.Single;
         Status = (Int32)dict["aStatus"];
     }
@@ -81,7 +81,7 @@ public class AchievementSingle: Achievement {
 /// 列表成就，由一组子目标构成
 /// </summary>
 public class AchievementList: Achievement {
-    public AchievementList(Dictionary<String, object> dict) : base(dict) {
+    public AchievementList(Dictionary<String, object> dict): base(dict) {
         Type = AchievementType.List;
         Status = 1;
 
@@ -110,7 +110,7 @@ public class AchievementList: Achievement {
 /// 部分列表成就，达成列表中的一部分即可
 /// </summary>
 public class AchievementPartiallyList: AchievementList {
-    public AchievementPartiallyList(Dictionary<String, object> dict) : base(dict) {
+    public AchievementPartiallyList(Dictionary<String, object> dict): base(dict) {
         Type = AchievementType.PartiallyList;
         TargetValue = (Int32)dict["aTargetValue"];
         Description = ((String)dict["aDescribe"]).Replace("$aTargetValue$", TargetValue.ToString());
@@ -134,7 +134,7 @@ public class AchievementPartiallyList: AchievementList {
 /// 单计数成就，单一目标计数
 /// </summary>
 public class AchievementCount: Achievement {
-    public AchievementCount(Dictionary<String, object> dict) : base(dict) {
+    public AchievementCount(Dictionary<String, object> dict): base(dict) {
         Type = AchievementType.Count;
         TargetValue = (Int32)dict["aTargetValue"];
         Value = (Int32)dict["aValue"];
@@ -149,7 +149,7 @@ public class AchievementCount: Achievement {
 /// 多计数成就，多个独立的目标计数
 /// </summary>
 public class AchievementMultiCount: Achievement {
-    public AchievementMultiCount(Dictionary<String, object> dict) : base(dict) {
+    public AchievementMultiCount(Dictionary<String, object> dict): base(dict) {
         Type = AchievementType.MultiCount;
         Status = 1;
 

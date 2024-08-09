@@ -1,15 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
 
+/// <summary>
+/// 任务
+/// </summary>
 public class Mission {
-    public Mission() { }
+    public Mission(Dictionary<String, object> dict) {
+        ID = dict["gID"].ToString();
+        Name = dict["gName"].ToString();
+        Description = dict["mDescribe"].ToString();
+    }
 
-    public String ID { get; set; }
-    public String Name { get; set; }
-    public MissionType Type { get; set; }
-    public Dictionary<String, object> Property { get; set; }
+    public String ID { get; }
+    public String Name { get; }
+    public String Description { get; }
+    public MissionType Type { get; protected set; }
+}
 
+public class WOWMission: Mission {
+    public WOWMission(Dictionary<String, object> dict): base(dict) {
+        Type = MissionType.WOWAchievement;
+        Achievement = new Achievement((Dictionary<string, object>)dict["mProperty"]);
+    }
 
+    public Achievement Achievement { get; protected set; }
 }
 
 /// <summary>
