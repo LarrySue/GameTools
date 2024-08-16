@@ -512,31 +512,31 @@
                                     "aObjectList": [
                                         {
                                             "oName": "锁定震击",
-                                            "oStatus": 0
+                                            "oStatus": 1
                                         },
                                         {
                                             "oName": "第一个挑战：灵巧",
-                                            "oStatus": 0
+                                            "oStatus": 1
                                         },
                                         {
                                             "oName": "第二个挑战：力量",
-                                            "oStatus": 0
+                                            "oStatus": 1
                                         },
                                         {
                                             "oName": "第三个挑战：毅力",
-                                            "oStatus": 0
+                                            "oStatus": 1
                                         },
                                         {
                                             "oName": "第四个挑战：应变",
-                                            "oStatus": 0
+                                            "oStatus": 1
                                         },
                                         {
                                             "oName": "第五个挑战：巧思",
-                                            "oStatus": 0
+                                            "oStatus": 1
                                         },
                                         {
                                             "oName": "完成创新",
-                                            "oStatus": 0
+                                            "oStatus": 1
                                         }
                                     ]
                                 },
@@ -545,14 +545,14 @@
                                     "aName": "积极倾听技巧",
                                     "aType": "single",
                                     "aDescribe": "完成索德拉苏斯【反叛的龙裔】任务线",
-                                    "aStatus": 0
+                                    "aStatus": 1
                                 },
                                 {
                                     "aID": "16730000010705",
                                     "aName": "新的开始",
                                     "aType": "single",
                                     "aDescribe": "完成欧恩哈拉平原的【世仇旧恨】任务线",
-                                    "aStatus": 0
+                                    "aStatus": 1
                                 },
                                 {
                                     "aID": "16730000010706",
@@ -563,7 +563,7 @@
                                     "aObjectList": [
                                         {
                                             "oName": "失落又迷时的维京人",
-                                            "oStatus": 0
+                                            "oStatus": 1
                                         },
                                         {
                                             "oName": "小玩意儿",
@@ -579,7 +579,7 @@
                                         },
                                         {
                                             "oName": "未曾设想的道路",
-                                            "oStatus": 0
+                                            "oStatus": 1
                                         },
                                         {
                                             "oName": "法力风暴秘辛",
@@ -591,11 +591,11 @@
                                         },
                                         {
                                             "oName": "黑王子齐聚",
-                                            "oStatus": 0
+                                            "oStatus": 1
                                         },
                                         {
                                             "oName": "迷时三人组",
-                                            "oStatus": 0
+                                            "oStatus": 1
                                         },
                                         {
                                             "oName": "丢失的魔精",
@@ -607,7 +607,7 @@
                                         },
                                         {
                                             "oName": "好运炉石卡牌",
-                                            "oStatus": 0
+                                            "oStatus": 1
                                         },
                                         {
                                             "oName": "凫兽",
@@ -638,7 +638,7 @@
                                     "aID": "16730000010801",
                                     "aName": "真我探险",
                                     "aType": "count",
-                                    "aDescribe": "龙鳞探险队名望25",
+                                    "aDescribe": "龙鳞探险队名望$aTargetValue$",
                                     "aTargetValue": 25,
                                     "aValue": 0
                                 },
@@ -646,7 +646,7 @@
                                     "aID": "16730000010802",
                                     "aName": "入伍可汗卫队",
                                     "aType": "count",
-                                    "aDescribe": "马鲁克半人马名望25",
+                                    "aDescribe": "马鲁克半人马名望$aTargetValue$",
                                     "aTargetValue": 25,
                                     "aValue": 0
                                 },
@@ -654,7 +654,7 @@
                                     "aID": "16730000010803",
                                     "aName": "加入社区",
                                     "aType": "count",
-                                    "aDescribe": "伊斯卡拉海象人名望30",
+                                    "aDescribe": "伊斯卡拉海象人名望$aTargetValue$",
                                     "aTargetValue": 25,
                                     "aValue": 0
                                 },
@@ -662,66 +662,71 @@
                                     "aID": "16730000010804",
                                     "aName": "龙群之友",
                                     "aType": "count",
-                                    "aDescribe": "瓦德拉肯联军名望30",
-                                    "aTargetValue": 25,
-                                    "aValue": 0
+                                    "aDescribe": "瓦德拉肯联军名望$aTargetValue$",
+                                    "aTargetValue": 30,
+                                    "aValue": 30
                                 },
                                 {
                                     "aID": "16730000010805",
                                     "aName": "“峈”绎不绝",
                                     "aType": "count",
-                                    "aDescribe": "峈姆鼹鼠人名望20",
-                                    "aTargetValue": 25,
+                                    "aDescribe": "峈姆鼹鼠人名望$aTargetValue$",
+                                    "aTargetValue": 20,
                                     "aValue": 0
                                 },
                                 {
                                     "aID": "16730000010806",
                                     "aName": "梦境的守望者",
                                     "aType": "count",
-                                    "aDescribe": "梦境守望者名望20",
-                                    "aTargetValue": 25,
+                                    "aDescribe": "梦境守望者名望$aTargetValue$",
+                                    "aTargetValue": 20,
                                     "aValue": 0
                                 },
                                 {
                                     "aID": "16730000010807",
                                     "aName": "多元宇宙传奇",
-                                    "aType": "single",
-                                    "aDescribe": "索莉多米友谊等级达到“多元宇宙传奇”",
+                                    "aType": "count",
+                                    "aDescribe": "索莉多米友谊等级达到$aTargetValue$",
+                                    "aTargetValue": 5,
                                     "aStatus": 0
                                 },
                                 {
                                     "aID": "16730000010808",
                                     "aName": "忠于王子",
-                                    "aType": "single",
-                                    "aDescribe": "黑曜王座与拉希奥达到最高等级的友谊",
+                                    "aType": "count",
+                                    "aDescribe": "黑曜王座与拉希奥达到$aTargetValue$",
+                                    "aTargetValue": 5,
                                     "aStatus": 0
                                 },
                                 {
                                     "aID": "16730000010809",
                                     "aName": "黑曜血脉",
-                                    "aType": "single",
-                                    "aDescribe": "黑曜王座与萨贝里安达到最高等级的友谊",
+                                    "aType": "count",
+                                    "aDescribe": "黑曜王座与萨贝里安达到$aTargetValue$",
+                                    "aTargetValue": 5,
                                     "aStatus": 0
                                 },
                                 {
                                     "aID": "16730000010810",
                                     "aName": "久负盛名",
-                                    "aType": "single",
-                                    "aDescribe": "工匠商盟阵营中达到崇尚声望",
+                                    "aType": "count",
+                                    "aDescribe": "工匠商盟阵营中达到$aTargetValue$",
+                                    "aTargetValue": 5,
                                     "aStatus": 0
                                 },
                                 {
                                     "aID": "16730000010811",
                                     "aName": "能量全满！",
-                                    "aType": "single",
-                                    "aDescribe": "钴蓝集所阵营中达到满声望",
+                                    "aType": "count",
+                                    "aDescribe": "钴蓝集所阵营中达到$aTargetValue$",
+                                    "aTargetValue": 5,
                                     "aStatus": 0
                                 },
                                 {
                                     "aID": "16730000010812",
                                     "aName": "冬裘健谈者",
                                     "aType": "count",
-                                    "aDescribe": "冬裘熊怪语技能达到100点",
+                                    "aDescribe": "冬裘熊怪语技能达到$aTargetValue$点",
                                     "aTargetValue": 100,
                                     "aValue": 0
                                 }
@@ -731,13 +736,768 @@
                             "aID": "167300000109",
                             "aName": "巨龙群岛探路者",
                             "aType": "set",
-                            "aAchievementList": []
+                            "aAchievementList": [
+                                {
+                                    "aID": "16730000010901",
+                                    "aName": "觉醒希望",
+                                    "aType": "list",
+                                    "aDescribe": "完成以下任务线",
+                                    "aObjectList": [
+                                        {
+                                            "oName": "龙鳞探险队",
+                                            "oStatus": 0
+                                        },
+                                        {
+                                            "oName": "保卫生命",
+                                            "oStatus": 0
+                                        },
+                                        {
+                                            "oName": "光复使命",
+                                            "oStatus": 0
+                                        },
+                                        {
+                                            "oName": "受难的巨龙",
+                                            "oStatus": 0
+                                        },
+                                        {
+                                            "oName": "拉希奥的计策",
+                                            "oStatus": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "aID": "16730000010902",
+                                    "aName": "欧恩摇滚",
+                                    "aType": "list",
+                                    "aDescribe": "完成以下任务线",
+                                    "aObjectList": [
+                                        {
+                                            "oName": "深入平原",
+                                            "oStatus": 0
+                                        },
+                                        {
+                                            "oName": "欧恩哈拉的祝福",
+                                            "oStatus": 0
+                                        },
+                                        {
+                                            "oName": "马鲁凯",
+                                            "oStatus": 0
+                                        },
+                                        {
+                                            "oName": "延续羁绊",
+                                            "oStatus": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "aID": "16730000010903",
+                                    "aName": "丈量碧蓝",
+                                    "aType": "list",
+                                    "aDescribe": "完成以下任务线",
+                                    "aObjectList": [
+                                        {
+                                            "oName": "深入档案馆",
+                                            "oStatus": 0
+                                        },
+                                        {
+                                            "oName": "腐烂根须",
+                                            "oStatus": 0
+                                        },
+                                        {
+                                            "oName": "海象人的麻烦",
+                                            "oStatus": 0
+                                        },
+                                        {
+                                            "oName": "瓦克索斯",
+                                            "oStatus": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "aID": "16730000010904",
+                                    "aName": "别让我把它拼出来",
+                                    "aType": "list",
+                                    "aDescribe": "完成以下任务线",
+                                    "aObjectList": [
+                                        {
+                                            "oName": "瓦德拉肯，巨龙之城",
+                                            "oStatus": 0
+                                        },
+                                        {
+                                            "oName": "时间大冒险家",
+                                            "oStatus": 0
+                                        },
+                                        {
+                                            "oName": "时间管理",
+                                            "oStatus": 0
+                                        }
+                                    ]
+                                },
+                                {
+                                    "aID": "16730000010905",
+                                    "aName": "奈萨里奥之烬",
+                                    "aType": "list",
+                                    "aDescribe": "完成以下任务线",
+                                    "aObjectList": [
+                                        {
+                                            "oName": "同巢操戈",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "破土而入",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "碎裂的传承",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "远古的交易",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "传世罪业",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "宿命对决",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "烈焰终熄",
+                                            "oStatus": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "aID": "16730000010906",
+                                    "aName": "巨龙群岛探索者",
+                                    "aType": "set",
+                                    "aAchievementList": [
+                                        {
+                                            "aID": "1673000001090601",
+                                            "aName": "探索觉醒海岸",
+                                            "aType": "list",
+                                            "aDescribe": "探索以下区域",
+                                            "aObjectList": [
+                                                {
+                                                    "oName": "绝顶树冠",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "龙心岗哨",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "闪霜突袭",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "生命缚誓者花园",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "黑曜壁垒",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "黑曜堡垒",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "充盈急流",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "红玉新生法池",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "碎鳞要塞",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "天顶观察站",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "狂野海滩",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "狂野禁猎区",
+                                                    "oStatus": 1
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "aID": "1673000001090602",
+                                            "aName": "探索欧恩哈拉平原",
+                                            "aType": "list",
+                                            "aDescribe": "探索以下区域",
+                                            "aObjectList": [
+                                                {
+                                                    "oName": "远古林枝",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "阔蹄岗哨",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "闪烬哨站",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "翡翠花园",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "剪河交汇口",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "马鲁凯",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "诺库顿要塞",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "德鲁萨尔之角",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "鲁萨扎尔高台",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "提拉凯",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "泽林沼地",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "风歌高地",
+                                                    "oStatus": 1
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "aID": "1673000001090603",
+                                            "aName": "探索碧蓝林海",
+                                            "aType": "list",
+                                            "aDescribe": "探索以下区域",
+                                            "aObjectList": [
+                                                {
+                                                    "oName": "安东尼达斯营地",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "碧蓝档案馆",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "大树丘",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "蕨皮山谷",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "僻壤营地",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "钴蓝集所",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "伊斯卡拉",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "雪皮之巢",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "塞隆哨站",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "三瀑勘查点",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "瓦克索斯",
+                                                    "oStatus": 1
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "aID": "1673000001090604",
+                                            "aName": "探索索德拉苏斯",
+                                            "aType": "list",
+                                            "aDescribe": "探索以下区域",
+                                            "aObjectList": [
+                                                {
+                                                    "oName": "瓦德拉肯",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "提尔要塞",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "格利基尔岗哨",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "南岗大门",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "时光流汇",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "艾杰斯亚学院",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "化身巨龙牢窟",
+                                                    "oStatus": 1
+                                                },
+                                                {
+                                                    "oName": "雾纱藏骨堂",
+                                                    "oStatus": 1
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "aID": "16730000010907",
+                                    "aName": "探索查拉雷克洞窟",
+                                    "aType": "list",
+                                    "aDescribe": "探索以下区域",
+                                    "aObjectList": [
+                                        {
+                                            "oName": "亚贝鲁斯之途",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "被埋葬的宝库",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "格里梅罗格",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "峈姆",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "纳·克斯寇",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "燃石废土",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "直达通路",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "扎卡利喷口",
+                                            "oStatus": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "aID": "16730000010908",
+                                    "aName": "探索翡翠梦境",
+                                    "aType": "list",
+                                    "aDescribe": "探索以下区域",
+                                    "aObjectList": [
+                                        {
+                                            "oName": "远古林枝",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "阿梅达希尔",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "伊瑟拉之眼",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "繁梦峭壁",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "拜荒者据点",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "根缚庇护所",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "水岸盘根",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "阴燃灌木林",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "生命圣泉",
+                                            "oStatus": 1
+                                        },
+                                        {
+                                            "oName": "旋翼盆地",
+                                            "oStatus": 1
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             "aID": "167300000110",
                             "aName": "穿越群岛",
                             "aType": "set",
-                            "aAchievementList": []
+                            "aAchievementList": [
+                                {
+                                    "aID": "16730000011001",
+                                    "aName": "请唤醒我",
+                                    "aType": "set",
+                                    "aAchievementList": [
+                                    ]
+                                },
+                                {
+                                    "aID": "16730000011002",
+                                    "aName": "半人马的目光",
+                                    "aType": "set",
+                                    "aAchievementList": [
+                                    ]
+                                },
+                                {
+                                    "aID": "16730000011003",
+                                    "aName": "网者大军",
+                                    "aType": "set",
+                                    "aAchievementList": [
+                                    ]
+                                },
+                                {
+                                    "aID": "16730000011004",
+                                    "aName": "龙群俱乐部",
+                                    "aType": "set",
+                                    "aAchievementList": [
+                                    ]
+                                },
+                                {
+                                    "aID": "16730000011005",
+                                    "aName": "打烊了！",
+                                    "aType": "set",
+                                    "aAchievementList": [
+                                    ]
+                                },
+                                {
+                                    "aID": "16730000011006",
+                                    "aName": "踏入风暴",
+                                    "aType": "set",
+                                    "aAchievementList": [
+                                        {
+                                            "aID": "1673000001100601",
+                                            "aName": "逐风战将",
+                                            "aType": "set",
+                                            "aAchievementList": [
+                                                {
+                                                    "aID": "167300000110060101",
+                                                    "aName": "逐风觉醒海岸",
+                                                    "aType": "set",
+                                                    "aAchievementList": [
+                                                        {
+                                                            "aID": "",
+                                                            "aName": "觉醒海岸的雷暴",
+                                                            "aType": "count",
+                                                            "aDescribe": "在觉醒海岸击败风元素强化生物$aTargetValue$",
+                                                            "aTargetValue": 200,
+                                                            "aValue": 0
+                                                        },
+                                                        {
+                                                            "aID": "",
+                                                            "aName": "觉醒海岸的沙暴",
+                                                            "aType": "count",
+                                                            "aDescribe": "在觉醒海岸击败土元素强化生物$aTargetValue$",
+                                                            "aTargetValue": 200,
+                                                            "aValue": 0
+                                                        },
+                                                        {
+                                                            "aID": "",
+                                                            "aName": "觉醒海岸的火焰风暴",
+                                                            "aType": "count",
+                                                            "aDescribe": "在觉醒海岸击败火元素强化生物$aTargetValue$",
+                                                            "aTargetValue": 200,
+                                                            "aValue": 0
+                                                        },
+                                                        {
+                                                            "aID": "",
+                                                            "aName": "觉醒海岸的雪暴",
+                                                            "aType": "count",
+                                                            "aDescribe": "在觉醒海岸击败水元素强化生物$aTargetValue$",
+                                                            "aTargetValue": 200,
+                                                            "aValue": 0
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "aID": "167300000110060102",
+                                                    "aName": "逐风欧恩哈拉平原",
+                                                    "aType": "set",
+                                                    "aAchievementList": [
+                                                        {
+                                                            "aID": "",
+                                                            "aName": "欧恩哈拉平原的雷暴",
+                                                            "aType": "count",
+                                                            "aDescribe": "在欧恩哈拉平原击败风元素强化生物$aTargetValue$",
+                                                            "aTargetValue": 200,
+                                                            "aValue": 0
+                                                        },
+                                                        {
+                                                            "aID": "",
+                                                            "aName": "欧恩哈拉平原的沙暴",
+                                                            "aType": "count",
+                                                            "aDescribe": "在欧恩哈拉平原击败土元素强化生物$aTargetValue$",
+                                                            "aTargetValue": 200,
+                                                            "aValue": 0
+                                                        },
+                                                        {
+                                                            "aID": "",
+                                                            "aName": "欧恩哈拉平原的火焰风暴",
+                                                            "aType": "count",
+                                                            "aDescribe": "在欧恩哈拉平原击败火元素强化生物$aTargetValue$",
+                                                            "aTargetValue": 200,
+                                                            "aValue": 0
+                                                        },
+                                                        {
+                                                            "aID": "",
+                                                            "aName": "欧恩哈拉平原的雪暴",
+                                                            "aType": "count",
+                                                            "aDescribe": "在欧恩哈拉平原击败水元素强化生物$aTargetValue$",
+                                                            "aTargetValue": 200,
+                                                            "aValue": 0
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "aID": "167300000110060103",
+                                                    "aName": "逐风碧蓝林海",
+                                                    "aType": "set",
+                                                    "aAchievementList": [
+                                                        {
+                                                            "aID": "16730000011006010301",
+                                                            "aName": "碧蓝林海的雷暴",
+                                                            "aType": "count",
+                                                            "aDescribe": "在碧蓝林海击败风元素强化生物$aTargetValue$",
+                                                            "aTargetValue": 200,
+                                                            "aValue": 0
+                                                        },
+                                                        {
+                                                            "aID": "16730000011006010302",
+                                                            "aName": "碧蓝林海的沙暴",
+                                                            "aType": "count",
+                                                            "aDescribe": "在碧蓝林海击败土元素强化生物$aTargetValue$",
+                                                            "aTargetValue": 200,
+                                                            "aValue": 0
+                                                        },
+                                                        {
+                                                            "aID": "16730000011006010303",
+                                                            "aName": "碧蓝林海的火焰风暴",
+                                                            "aType": "count",
+                                                            "aDescribe": "在碧蓝林海击败火元素强化生物$aTargetValue$",
+                                                            "aTargetValue": 200,
+                                                            "aValue": 0
+                                                        },
+                                                        {
+                                                            "aID": "16730000011006010304",
+                                                            "aName": "碧蓝林海的雪暴",
+                                                            "aType": "count",
+                                                            "aDescribe": "在碧蓝林海击败水元素强化生物$aTargetValue$",
+                                                            "aTargetValue": 200,
+                                                            "aValue": 0
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "aID": "167300000110060104",
+                                                    "aName": "逐风索德拉苏斯",
+                                                    "aType": "set",
+                                                    "aAchievementList": [
+                                                        {
+                                                            "aID": "16730000011006010401",
+                                                            "aName": "索德拉苏斯的雷暴",
+                                                            "aType": "count",
+                                                            "aDescribe": "在索德拉苏斯击败风元素强化生物$aTargetValue$",
+                                                            "aTargetValue": 200,
+                                                            "aValue": 0
+                                                        },
+                                                        {
+                                                            "aID": "16730000011006010402",
+                                                            "aName": "索德拉苏斯的沙暴",
+                                                            "aType": "count",
+                                                            "aDescribe": "在索德拉苏斯击败土元素强化生物$aTargetValue$",
+                                                            "aTargetValue": 200,
+                                                            "aValue": 0
+                                                        },
+                                                        {
+                                                            "aID": "16730000011006010403",
+                                                            "aName": "索德拉苏斯的火焰风暴",
+                                                            "aType": "count",
+                                                            "aDescribe": "在索德拉苏斯击败火元素强化生物$aTargetValue$",
+                                                            "aTargetValue": 200,
+                                                            "aValue": 0
+                                                        },
+                                                        {
+                                                            "aID": "16730000011006010404",
+                                                            "aName": "索德拉苏斯的雪暴",
+                                                            "aType": "count",
+                                                            "aDescribe": "在索德拉苏斯击败水元素强化生物$aTargetValue$",
+                                                            "aTargetValue": 200,
+                                                            "aValue": 0
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "aID": "1673000001100602",
+                                            "aName": "以暴易暴",
+                                            "aType": "partiallyList",
+                                            "aDescribe": "风暴事件中击杀以下稀有中的$aTargetValue$个",
+                                            "aTargetValue": 8,
+                                            "aObjectList": [
+                                                {
+                                                    "oName": "因菲纳姆",
+                                                    "oStatus": 0
+                                                },
+                                                {
+                                                    "oName": "波德隆",
+                                                    "oStatus": 0
+                                                },
+                                                {
+                                                    "oName": "妮拉·火祸",
+                                                    "oStatus": 0
+                                                },
+                                                {
+                                                    "oName": "祖加兹·破核",
+                                                    "oStatus": 0
+                                                },
+                                                {
+                                                    "oName": "灰石",
+                                                    "oStatus": 0
+                                                },
+                                                {
+                                                    "oName": "凯恩·火印",
+                                                    "oStatus": 0
+                                                },
+                                                {
+                                                    "oName": "菲尔兰",
+                                                    "oStatus": 0
+                                                },
+                                                {
+                                                    "oName": "盖尔基昂",
+                                                    "oStatus": 0
+                                                },
+                                                {
+                                                    "oName": "恩布拉基昂",
+                                                    "oStatus": 0
+                                                },
+                                                {
+                                                    "oName": "克里斯塔路斯",
+                                                    "oStatus": 0
+                                                },
+                                                {
+                                                    "oName": "卡兰土恩",
+                                                    "oStatus": 0
+                                                },
+                                                {
+                                                    "oName": "鲁恩·冰风",
+                                                    "oStatus": 0
+                                                },
+                                                {
+                                                    "oName": "皮普斯巴克·雷裂",
+                                                    "oStatus": 0
+                                                },
+                                                {
+                                                    "oName": "沃拉兹卡",
+                                                    "oStatus": 0
+                                                },
+                                                {
+                                                    "oName": "梅莉拉",
+                                                    "oStatus": 0
+                                                },
+                                                {
+                                                    "oName": "里雷恩",
+                                                    "oStatus": 0
+                                                },
+                                                {
+                                                    "oName": "格拉弗里昂",
+                                                    "oStatus": 0
+                                                },
+                                                {
+                                                    "oName": "弗洛基昂",
+                                                    "oStatus": 0
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "aID": "1673000001100603",
+                                            "aName": "元素过载",
+                                            "aType": "count",
+                                            "aDescribe": "获得$aTargetValue$份元素涌流。",
+                                            "aTargetValue": 5000,
+                                            "aValue": 5000
+                                        },
+                                        {
+                                            "aID": "1673000001100604",
+                                            "aName": "T台劲风",
+                                            "aType": "single",
+                                            "aDescribe": "从原始风暴收集一套护甲。",
+                                            "aStatus": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "aID": "16730000011007",
+                                    "aName": "什么都无法阻止研究",
+                                    "aType": "single",
+                                    "aDescribe": "在“研究员遇袭”中击败雷卡尔上尉。",
+                                    "aStatus": 1
+                                },
+                                {
+                                    "aID": "16730000011008",
+                                    "aName": "穿越灰烬与火光",
+                                    "aType": "single",
+                                    "aDescribe": "完成任务“弥散营地”。",
+                                    "aStatus": 1
+                                },
+                                {
+                                    "aID": "16730000011009",
+                                    "aName": "塑梦者",
+                                    "aType": "single",
+                                    "aDescribe": "完成任务“塑造梦涌”。",
+                                    "aStatus": 1
+                                }
+                            ]
                         },
                         {
                             "aID": "167300000111",
