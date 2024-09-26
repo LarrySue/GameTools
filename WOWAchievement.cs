@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class Achievement {
-    public Achievement(Dictionary<String, object> dict) {
+/// <summary>
+/// 魔兽世界成就
+/// </summary>
+public class WOWAchievement {
+    public WOWAchievement(Dictionary<String, object> dict) {
         ID = dict["aID"].ToString();
         Name = dict["aName"].ToString();
         Description = "";
@@ -12,14 +15,23 @@ public class Achievement {
         }
     }
 
+    /// <summary>
+    /// 成就ID
+    /// </summary>
     public String ID { get; }
+    /// <summary>
+    /// 成就名称
+    /// </summary>
     public String Name { get; }
+    /// <summary>
+    /// 成就描述
+    /// </summary>
     public String Description { get; protected set; }
 
     /// <summary>
     /// 成就类型
     /// </summary>
-    public AchievementType Type { get; protected set; }
+    public WOWAchievementType Type { get; protected set; }
 
     /// <summary>
     /// 完成状态 1完成 0未完成
@@ -30,31 +42,31 @@ public class Achievement {
 /// <summary>
 /// 集合类成就，由子成就组成
 /// </summary>
-public class AchievementSet: Achievement {
-    public AchievementSet(Dictionary<String, object> dict): base(dict) {
+public class WOWAchievementSet: WOWAchievement {
+    public WOWAchievementSet(Dictionary<String, object> dict): base(dict) {
         Description = "完成下列成就";
-        Type = AchievementType.Set;
+        Type = WOWAchievementType.Set;
         Status = 1;
 
         Dictionary<String, object>[] arr = (Dictionary<String, object>[])dict["aAchievementList"];
-        Set = new List<Achievement>(arr.Length);
+        Set = new List<WOWAchievement>(arr.Length);
 
         for (int i = 0; i < arr.Length; i++) {
             Dictionary<String, object> tempDict = arr[i];
             String typeStr = (String)tempDict["aType"];
 
             if (typeStr == "set") {
-                Set[i] = new AchievementSet(tempDict);
+                Set[i] = new WOWAchievementSet(tempDict);
             } else if (typeStr == "single") {
-                Set[i] = new AchievementSingle(tempDict);
+                Set[i] = new WOWAchievementSingle(tempDict);
             } else if (typeStr == "list") {
-                Set[i] = new AchievementList(tempDict);
+                Set[i] = new WOWAchievementList(tempDict);
             } else if (typeStr == "partiallyList") {
-                Set[i] = new AchievementPartiallyList(tempDict);
+                Set[i] = new WOWAchievementPartiallyList(tempDict);
             } else if (typeStr == "count") {
-                Set[i] = new AchievementCount(tempDict);
+                Set[i] = new WOWAchievementCount(tempDict);
             } else if (typeStr == "multiCount") {
-                Set[i] = new AchievementMultiCount(tempDict);
+                Set[i] = new WOWAchievementMultiCount(tempDict);
             }
 
             Status = Status * Set[i].Status;
@@ -64,15 +76,15 @@ public class AchievementSet: Achievement {
     /// <summary>
     /// 子成就列表
     /// </summary>
-    public List<Achievement> Set { get; }
+    public List<WOWAchievement> Set { get; }
 }
 
 /// <summary>
 /// 单一成就，由一个单独的目标构成
 /// </summary>
-public class AchievementSingle: Achievement {
-    public AchievementSingle(Dictionary<String, object> dict): base(dict) {
-        Type = AchievementType.Single;
+public class WOWAchievementSingle: WOWAchievement {
+    public WOWAchievementSingle(Dictionary<String, object> dict): base(dict) {
+        Type = WOWAchievementType.Single;
         Status = (Int32)dict["aStatus"];
     }
 }
@@ -80,9 +92,9 @@ public class AchievementSingle: Achievement {
 /// <summary>
 /// 列表成就，由一组子目标构成
 /// </summary>
-public class AchievementList: Achievement {
-    public AchievementList(Dictionary<String, object> dict): base(dict) {
-        Type = AchievementType.List;
+public class WOWAchievementList: WOWAchievement {
+    public WOWAchievementList(Dictionary<String, object> dict): base(dict) {
+        Type = WOWAchievementType.List;
         Status = 1;
 
         Dictionary<String, object>[] arr = (Dictionary<String, object>[])dict["aObjectList"];
@@ -109,9 +121,9 @@ public class AchievementList: Achievement {
 /// <summary>
 /// 部分列表成就，达成列表中的一部分即可
 /// </summary>
-public class AchievementPartiallyList: AchievementList {
-    public AchievementPartiallyList(Dictionary<String, object> dict): base(dict) {
-        Type = AchievementType.PartiallyList;
+public class WOWAchievementPartiallyList: WOWAchievementList {
+    public WOWAchievementPartiallyList(Dictionary<String, object> dict): base(dict) {
+        Type = WOWAchievementType.PartiallyList;
         TargetValue = (Int32)dict["aTargetValue"];
         Description = ((String)dict["aDescribe"]).Replace("$aTargetValue$", TargetValue.ToString());
 
@@ -133,24 +145,30 @@ public class AchievementPartiallyList: AchievementList {
 /// <summary>
 /// 单计数成就，单一目标计数
 /// </summary>
-public class AchievementCount: Achievement {
-    public AchievementCount(Dictionary<String, object> dict): base(dict) {
-        Type = AchievementType.Count;
+public class WOWAchievementCount: WOWAchievement {
+    public WOWAchievementCount(Dictionary<String, object> dict): base(dict) {
+        Type = WOWAchievementType.Count;
         TargetValue = (Int32)dict["aTargetValue"];
         Value = (Int32)dict["aValue"];
         Status = (Value >= TargetValue) ? 1 : 0;
     }
 
+    /// <summary>
+    /// 目标值
+    /// </summary>
     public Int32 TargetValue { get; }
+    /// <summary>
+    /// 已完成值
+    /// </summary>
     public Int32 Value { get; }
 }
 
 /// <summary>
 /// 多计数成就，多个独立的目标计数
 /// </summary>
-public class AchievementMultiCount: Achievement {
-    public AchievementMultiCount(Dictionary<String, object> dict): base(dict) {
-        Type = AchievementType.MultiCount;
+public class WOWAchievementMultiCount: WOWAchievement {
+    public WOWAchievementMultiCount(Dictionary<String, object> dict): base(dict) {
+        Type = WOWAchievementType.MultiCount;
         Status = 1;
 
         Dictionary<String, object>[] arr = (Dictionary<String, object>[])dict["aObjectList"];
@@ -170,6 +188,9 @@ public class AchievementMultiCount: Achievement {
         }
     }
 
+    /// <summary>
+    /// 计数目标列表
+    /// </summary>
     public List<CountTarget> List { get; }
 }
 
@@ -177,7 +198,7 @@ public class AchievementMultiCount: Achievement {
 /// <summary>
 /// 成就类型
 /// </summary>
-public enum AchievementType {
+public enum WOWAchievementType {
     /// <summary>
     /// 集合，由子成就组成
     /// </summary>
@@ -202,7 +223,6 @@ public enum AchievementType {
     /// 多计数，多个独立的目标计数
     /// </summary>
     MultiCount,
-    Test
 }
 
 /// <summary>

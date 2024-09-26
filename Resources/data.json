@@ -3,13 +3,13 @@
         "gID": 1,
         "gName": "魔兽世界",
         "gNickname": "WOW",
-        "gMissionList": [
+        "gTodoList": [
             {
-                "mID": "1673000001",
-                "mName": "苏醒的世界",
-                "mDescribe": "10.0《巨龙时代》资料片总成就",
-                "mType": "wow_achievement",
-                "mProperty": {
+                "tID": "1673000001",
+                "tName": "苏醒的世界",
+                "tDescribe": "10.0《巨龙时代》资料片总成就",
+                "tType": "wow_achievement",
+                "tProperty": {
                     "aID": "1673000001",
                     "aName": "苏醒的世界",
                     "aType": "set",
@@ -1853,18 +1853,18 @@
         "gID": 2,
         "gName": "明日方舟",
         "gNickname": "粥",
-        "gMissionList": []
+        "gTodoList": []
     },
     {
         "gID": 3,
         "gName": "碧蓝航线",
         "gNickname": "舰B",
-        "gMissionList": []
+        "gTodoList": []
     },
     {
         "gID": 4,
         "gName": "尘白禁区",
         "gNickname": "尘白",
-        "gMissionList": []
+        "gTodoList": []
     }
 ]
