@@ -1231,7 +1231,7 @@
                                                             "aType": "count",
                                                             "aDescribe": "在觉醒海岸击败风元素强化生物$aTargetValue$",
                                                             "aTargetValue": 200,
-                                                            "aValue": 0
+                                                            "aValue": 200
                                                         },
                                                         {
                                                             "aID": "",
@@ -1239,7 +1239,7 @@
                                                             "aType": "count",
                                                             "aDescribe": "在觉醒海岸击败土元素强化生物$aTargetValue$",
                                                             "aTargetValue": 200,
-                                                            "aValue": 0
+                                                            "aValue": 200
                                                         },
                                                         {
                                                             "aID": "",
@@ -1247,7 +1247,7 @@
                                                             "aType": "count",
                                                             "aDescribe": "在觉醒海岸击败火元素强化生物$aTargetValue$",
                                                             "aTargetValue": 200,
-                                                            "aValue": 0
+                                                            "aValue": 200
                                                         },
                                                         {
                                                             "aID": "",
@@ -1255,7 +1255,7 @@
                                                             "aType": "count",
                                                             "aDescribe": "在觉醒海岸击败水元素强化生物$aTargetValue$",
                                                             "aTargetValue": 200,
-                                                            "aValue": 0
+                                                            "aValue": 200
                                                         }
                                                     ]
                                                 },
@@ -1270,7 +1270,7 @@
                                                             "aType": "count",
                                                             "aDescribe": "在欧恩哈拉平原击败风元素强化生物$aTargetValue$",
                                                             "aTargetValue": 200,
-                                                            "aValue": 0
+                                                            "aValue": 200
                                                         },
                                                         {
                                                             "aID": "",
@@ -1278,7 +1278,7 @@
                                                             "aType": "count",
                                                             "aDescribe": "在欧恩哈拉平原击败土元素强化生物$aTargetValue$",
                                                             "aTargetValue": 200,
-                                                            "aValue": 0
+                                                            "aValue": 200
                                                         },
                                                         {
                                                             "aID": "",
@@ -1286,7 +1286,7 @@
                                                             "aType": "count",
                                                             "aDescribe": "在欧恩哈拉平原击败火元素强化生物$aTargetValue$",
                                                             "aTargetValue": 200,
-                                                            "aValue": 0
+                                                            "aValue": 200
                                                         },
                                                         {
                                                             "aID": "",
@@ -1294,7 +1294,7 @@
                                                             "aType": "count",
                                                             "aDescribe": "在欧恩哈拉平原击败水元素强化生物$aTargetValue$",
                                                             "aTargetValue": 200,
-                                                            "aValue": 0
+                                                            "aValue": 200
                                                         }
                                                     ]
                                                 },
@@ -1309,7 +1309,7 @@
                                                             "aType": "count",
                                                             "aDescribe": "在碧蓝林海击败风元素强化生物$aTargetValue$",
                                                             "aTargetValue": 200,
-                                                            "aValue": 0
+                                                            "aValue": 200
                                                         },
                                                         {
                                                             "aID": "16730000011006010302",
@@ -1317,7 +1317,7 @@
                                                             "aType": "count",
                                                             "aDescribe": "在碧蓝林海击败土元素强化生物$aTargetValue$",
                                                             "aTargetValue": 200,
-                                                            "aValue": 0
+                                                            "aValue": 200
                                                         },
                                                         {
                                                             "aID": "16730000011006010303",
@@ -1325,7 +1325,7 @@
                                                             "aType": "count",
                                                             "aDescribe": "在碧蓝林海击败火元素强化生物$aTargetValue$",
                                                             "aTargetValue": 200,
-                                                            "aValue": 0
+                                                            "aValue": 200
                                                         },
                                                         {
                                                             "aID": "16730000011006010304",
@@ -1333,7 +1333,7 @@
                                                             "aType": "count",
                                                             "aDescribe": "在碧蓝林海击败水元素强化生物$aTargetValue$",
                                                             "aTargetValue": 200,
-                                                            "aValue": 0
+                                                            "aValue": 200
                                                         }
                                                     ]
                                                 },
@@ -1348,7 +1348,7 @@
                                                             "aType": "count",
                                                             "aDescribe": "在索德拉苏斯击败风元素强化生物$aTargetValue$",
                                                             "aTargetValue": 200,
-                                                            "aValue": 0
+                                                            "aValue": 200
                                                         },
                                                         {
                                                             "aID": "16730000011006010402",
@@ -1356,7 +1356,7 @@
                                                             "aType": "count",
                                                             "aDescribe": "在索德拉苏斯击败土元素强化生物$aTargetValue$",
                                                             "aTargetValue": 200,
-                                                            "aValue": 0
+                                                            "aValue": 200
                                                         },
                                                         {
                                                             "aID": "16730000011006010403",
@@ -1364,7 +1364,7 @@
                                                             "aType": "count",
                                                             "aDescribe": "在索德拉苏斯击败火元素强化生物$aTargetValue$",
                                                             "aTargetValue": 200,
-                                                            "aValue": 0
+                                                            "aValue": 200
                                                         },
                                                         {
                                                             "aID": "16730000011006010404",
@@ -1372,7 +1372,7 @@
                                                             "aType": "count",
                                                             "aDescribe": "在索德拉苏斯击败水元素强化生物$aTargetValue$",
                                                             "aTargetValue": 200,
-                                                            "aValue": 0
+                                                            "aValue": 200
                                                         }
                                                     ]
                                                 }
